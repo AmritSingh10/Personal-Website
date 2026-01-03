@@ -1,5 +1,5 @@
-import ProfilePhoto from "@/components/ProfilePhoto";
 import SocialLinks from "@/components/SocialLinks";
+import eagleScoutPhoto from "@/assets/eagle-scout.jpeg";
 
 const Index = () => {
   return (
@@ -9,35 +9,40 @@ const Index = () => {
         <header className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-12 mb-12 fade-in">
           <div className="flex-1 space-y-4">
             <h1 className="display-name">
-              <span className="display-name-italic">Your</span> Name
+              <span className="display-name-italic">Amrit</span> Singh
             </h1>
             <p className="body-text text-muted-foreground max-w-md">
-              A brief tagline about yourself — what you do, what you care about, 
-              or simply a thought that defines you.
+              I'm a 17 year old at TJHSST.
             </p>
           </div>
           
           <div className="flex-shrink-0">
-            <ProfilePhoto />
+            <div className="w-40 h-40 md:w-52 md:h-52 overflow-hidden rounded-lg border border-border shadow-sm">
+              <img
+                src={eagleScoutPhoto}
+                alt="Me at my Eagle Scout Board of Review"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <p className="text-xs text-muted-foreground mt-2 max-w-[13rem] leading-relaxed">
+              Me at my Eagle Scout Board of Review with Ambassador Reuben Brigety and Jack Hannon
+            </p>
           </div>
         </header>
 
         {/* Divider */}
         <div className="w-full h-px bg-border mb-10 fade-in-delay-1" />
 
-        {/* Bio section */}
+        {/* Work section */}
         <section className="mb-12 fade-in-delay-2">
-          <span className="section-label mb-4 block">About</span>
-          <div className="body-text space-y-4 text-foreground/90">
-            <p>
-              Welcome to my corner of the internet. I'm passionate about creating things 
-              that matter and finding beauty in simplicity.
-            </p>
-            <p>
-              Currently exploring new ideas and always open to interesting conversations. 
-              Feel free to reach out.
-            </p>
-          </div>
+          <span className="section-label mb-4 block">My Work</span>
+          <ul className="body-text space-y-2 text-foreground/90 list-disc list-inside">
+            <li>Research Intern @ Stanford University Engineering</li>
+            <li>Mentor at Dartmouth's EDIT Lab</li>
+          </ul>
+          <p className="body-text text-foreground/90 mt-6">
+            I'm always exploring new ideas and looking to learn more. Feel free to reach out.
+          </p>
         </section>
 
         {/* Social links */}
