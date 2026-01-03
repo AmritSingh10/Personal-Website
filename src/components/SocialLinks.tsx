@@ -1,7 +1,5 @@
-import { Twitter, Linkedin, Instagram, Copy, Check } from "lucide-react";
-import { useState } from "react";
+import { Twitter, Linkedin, Instagram, Mail } from "lucide-react";
 import { toast } from "sonner";
-
 interface SocialLink {
   name: string;
   icon: React.ReactNode;
@@ -27,13 +25,9 @@ const socialLinks: SocialLink[] = [
 ];
 
 const SocialLinks = () => {
-  const [copied, setCopied] = useState(false);
-
   const handleCopyEmail = async () => {
     await navigator.clipboard.writeText("amritrsingh26@gmail.com");
-    setCopied(true);
     toast.success("Email copied to clipboard!");
-    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -55,7 +49,7 @@ const SocialLinks = () => {
         className="social-icon"
         aria-label="Copy email"
       >
-        {copied ? <Check size={20} /> : <Copy size={20} />}
+        <Mail size={20} />
       </button>
     </div>
   );
