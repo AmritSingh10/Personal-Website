@@ -1,4 +1,6 @@
-import { Twitter, Linkedin, Instagram, Github, Mail } from "lucide-react";
+import { Twitter, Linkedin, Instagram, Copy, Check } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
 
 interface SocialLink {
   name: string;
@@ -10,38 +12,37 @@ const socialLinks: SocialLink[] = [
   {
     name: "Twitter",
     icon: <Twitter size={20} />,
-    href: "#",
+    href: "https://x.com/amritrsingh26",
   },
   {
     name: "LinkedIn",
     icon: <Linkedin size={20} />,
-    href: "#",
+    href: "https://www.linkedin.com/in/amritrsingh/",
   },
   {
     name: "Instagram",
     icon: <Instagram size={20} />,
-    href: "#",
-  },
-  {
-    name: "GitHub",
-    icon: <Github size={20} />,
-    href: "#",
-  },
-  {
-    name: "Email",
-    icon: <Mail size={20} />,
-    href: "mailto:hello@example.com",
+    href: "https://www.instagram.com/amritrsingh26/",
   },
 ];
 
 const SocialLinks = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = async () => {
+    await navigator.clipboard.writeText("amritrsingh26@gmail.com");
+    setCopied(true);
+    toast.success("Email copied to clipboard!");
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <div className="flex items-center gap-2">
       {socialLinks.map((link) => (
         <a
           key={link.name}
           href={link.href}
-          target={link.href.startsWith("mailto") ? undefined : "_blank"}
+          target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
           aria-label={link.name}
@@ -49,6 +50,13 @@ const SocialLinks = () => {
           {link.icon}
         </a>
       ))}
+      <button
+        onClick={handleCopyEmail}
+        className="social-icon"
+        aria-label="Copy email"
+      >
+        {copied ? <Check size={20} /> : <Copy size={20} />}
+      </button>
     </div>
   );
 };
