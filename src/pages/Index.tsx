@@ -21,8 +21,8 @@ const Index = () => {
               <ul className="body-text space-y-2 text-foreground/90 list-disc list-inside text-sm">
                 <li>Research Intern @ Stanford University Engineering</li>
                 <li>Mentor at Dartmouth's EDIT Lab</li>
-                <li>Quantum RL for Algorithmic Trading — QML model with IBM Qiskit for optimal trades under uncertainty</li>
-                <li>Wildfire Evacuation Optimization — ML approach using NetLogo & TensorFlow, reduced casualties ~15%</li>
+                <li>Quantum ML model integrated with VaR and CVaR to execute optimal trades under uncertainty.</li>
+                <li>Optimized Wildfire Evacuations using a Agent-Based Modeling and ML approach.</li>
               </ul>
               <p className="body-text text-foreground/90 mt-4 text-sm">
                 I'm always exploring new ideas and looking to learn more. Feel free to reach out.
