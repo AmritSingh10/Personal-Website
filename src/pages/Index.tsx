@@ -31,7 +31,7 @@ const Index = () => {
           </div>
           
           <div className="flex-shrink-0 md:ml-8">
-            <div className="w-56 h-80 md:w-64 md:h-96 overflow-hidden rounded-lg border border-border shadow-sm">
+            <div className="w-60 h-[22rem] md:w-72 md:h-[26rem] overflow-hidden rounded-lg border border-border shadow-sm">
               <img
                 src={coryLevyPhoto}
                 alt="With Cory Levy, founder of ZFellows"
