@@ -39,7 +39,7 @@ const Index = () => {
               />
             </div>
             <p className="text-xs text-muted-foreground mt-2 max-w-[14rem] leading-relaxed">
-              With <a href="https://x.com/cory/highlights" target="_blank" rel="noopener noreferrer" className="subtle-link">Cory Levy</a>—founder, ZFellows.
+              With <a href="https://x.com/cory" target="_blank" rel="noopener noreferrer" className="subtle-link">Cory Levy</a>—founder, ZFellows.
             </p>
           </div>
         </header>
