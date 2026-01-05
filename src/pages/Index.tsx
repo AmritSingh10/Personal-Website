@@ -30,8 +30,8 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="flex-shrink-0">
-            <div className="w-64 h-96 md:w-80 md:h-[28rem] overflow-hidden rounded-lg border border-border shadow-sm">
+          <div className="flex-shrink-0 md:ml-8">
+            <div className="w-56 h-80 md:w-64 md:h-96 overflow-hidden rounded-lg border border-border shadow-sm">
               <img
                 src={coryLevyPhoto}
                 alt="With Cory Levy, founder of ZFellows"
