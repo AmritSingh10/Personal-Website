@@ -1,4 +1,4 @@
-import { Twitter, Linkedin, Instagram, Mail } from "lucide-react";
+import { Twitter, Linkedin, Instagram, Github, Mail } from "lucide-react";
 import { toast } from "sonner";
 interface SocialLink {
   name: string;
@@ -21,6 +21,11 @@ const socialLinks: SocialLink[] = [
     name: "Instagram",
     icon: <Instagram size={20} />,
     href: "https://www.instagram.com/amritrsingh26/",
+  },
+  {
+    name: "GitHub",
+    icon: <Github size={20} />,
+    href: "https://github.com/AmritSingh10",
   },
 ];
 
