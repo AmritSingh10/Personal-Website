@@ -12,7 +12,7 @@ const Index = () => {
               <span className="display-name-italic">Amrit</span> Singh
             </h1>
             <p className="body-text text-muted-foreground max-w-md">
-              I'm an 18 year old studying Computer Engineering at the University of Illinois Urbana-Champaign.
+              I'm currently a student at UIUC studying Computer Engineering.
             </p>
             
             {/* Work section */}
