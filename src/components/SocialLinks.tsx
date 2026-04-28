@@ -31,7 +31,7 @@ const socialLinks: SocialLink[] = [
 
 const SocialLinks = () => {
   const handleCopyEmail = async () => {
-    await navigator.clipboard.writeText("amritrsingh26@gmail.com");
+    await navigator.clipboard.writeText("amritrs2@illinois.edu");
     toast.success("Email copied to clipboard!");
   };
 
