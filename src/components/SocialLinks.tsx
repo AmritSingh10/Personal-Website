@@ -1,61 +1,26 @@
-import { Twitter, Linkedin, Instagram, Github, Mail } from "lucide-react";
-import { toast } from "sonner";
-interface SocialLink {
-  name: string;
-  icon: React.ReactNode;
-  href: string;
-}
-
-const socialLinks: SocialLink[] = [
-  {
-    name: "Twitter",
-    icon: <Twitter size={20} />,
-    href: "https://x.com/amritrsingh26",
-  },
-  {
-    name: "LinkedIn",
-    icon: <Linkedin size={20} />,
-    href: "https://www.linkedin.com/in/amritrsingh/",
-  },
-  {
-    name: "Instagram",
-    icon: <Instagram size={20} />,
-    href: "https://www.instagram.com/amritrsingh26/",
-  },
-  {
-    name: "GitHub",
-    icon: <Github size={20} />,
-    href: "https://github.com/AmritSingh10",
-  },
+const links = [
+  { name: "amritrs2 [at] illinois.edu", href: "mailto:amritrs2@illinois.edu" },
+  { name: "X", href: "https://x.com/amritrsingh26" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/amritrsingh/" },
+  { name: "GitHub", href: "https://github.com/AmritSingh10" },
 ];
 
 const SocialLinks = () => {
-  const handleCopyEmail = async () => {
-    await navigator.clipboard.writeText("amritrs2@illinois.edu");
-    toast.success("Email copied to clipboard!");
-  };
-
   return (
-    <div className="flex items-center gap-2">
-      {socialLinks.map((link) => (
-        <a
-          key={link.name}
-          href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-          aria-label={link.name}
-        >
-          {link.icon}
-        </a>
-      ))}
-      <button
-        onClick={handleCopyEmail}
-        className="social-icon"
-        aria-label="Copy email"
-      >
-        <Mail size={20} />
-      </button>
+    <div className="pt-6 border-t border-border">
+      <div className="flex flex-wrap justify-between gap-4 pt-4 text-sm text-foreground/80">
+        {links.map((link) => (
+          <a
+            key={link.name}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="subtle-link"
+          >
+            {link.name}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
