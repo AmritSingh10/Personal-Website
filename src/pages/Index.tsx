@@ -8,23 +8,23 @@ const Index = () => {
         {/* Header with photo */}
         <header className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-12 mb-8 fade-in">
           <div className="flex-1 space-y-4">
-            <h1 className="display-name whitespace-nowrap">
+            <h1 className="display-name">
               <span className="display-name-italic">Amrit</span> Singh
             </h1>
-            <p className="body-text text-muted-foreground max-w-md whitespace-nowrap">
+            <p className="body-text text-foreground/80 max-w-md">
               I'm currently a student at UIUC studying Computer Engineering.
             </p>
             
             {/* Work section */}
             <div className="pt-4">
               <span className="section-label mb-3 block">My Work</span>
-              <ul className="body-text space-y-2 text-foreground/90 list-disc list-inside text-sm">
+              <ul className="body-text space-y-2 text-foreground/80 list-disc list-inside">
                 <li>Research Intern @ Stanford University Engineering</li>
                 <li>Mentor at <a href="https://jlevy44.github.io/EDIT_AI_Virtual_Conference_25/presenter_articles/transformer.html" target="_blank" rel="noopener noreferrer" className="subtle-link">Dartmouth's EDIT</a> Lab</li>
                 <li><a href="https://qlab.sites.tjhsst.edu/projects/detail/129/" target="_blank" rel="noopener noreferrer" className="subtle-link">Quantum ML model</a> integrated with VaR and CVaR to execute optimal trades under uncertainty.</li>
                 <li>Optimized Wildfire Evacuations using a Agent-Based Modeling and ML approach.</li>
               </ul>
-              <p className="body-text text-foreground/90 mt-4 text-sm">
+              <p className="body-text text-foreground/80 mt-4">
                 I'm always exploring new ideas and looking to learn more. Feel free to reach out.
               </p>
             </div>

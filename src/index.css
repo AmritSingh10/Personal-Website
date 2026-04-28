@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 30 10% 15%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 85%;
 
-    --card: 40 25% 95%;
-    --card-foreground: 30 10% 15%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 85%;
 
-    --popover: 40 33% 97%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 85%;
 
-    --primary: 150 15% 45%;
-    --primary-foreground: 40 33% 97%;
+    --primary: 0 0% 90%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 35 20% 90%;
-    --secondary-foreground: 30 10% 25%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 85%;
 
-    --muted: 35 15% 92%;
-    --muted-foreground: 30 8% 50%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 150 12% 55%;
-    --accent-foreground: 40 33% 97%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 90%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 35 15% 88%;
-    --input: 35 15% 88%;
-    --ring: 150 15% 45%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 85%;
 
     --radius: 0.75rem;
 
@@ -40,9 +40,9 @@
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Inter', system-ui, sans-serif;
     
-    --photo-border: 35 20% 85%;
-    --photo-shadow: 30 20% 75%;
-    --link-underline: 150 15% 70%;
+    --photo-border: 0 0% 18%;
+    --photo-shadow: 0 0% 0%;
+    --link-underline: 0 0% 50%;
     
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -119,13 +119,13 @@
 
 @layer components {
   .display-name {
-    font-family: var(--font-display);
-    @apply text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight;
+    font-family: var(--font-body);
+    @apply text-base md:text-lg font-normal tracking-normal;
   }
 
   .display-name-italic {
-    font-family: var(--font-display);
-    @apply italic font-normal;
+    font-family: var(--font-body);
+    @apply not-italic font-normal;
   }
 
   .body-text {
@@ -139,7 +139,7 @@
   }
 
   .subtle-link {
-    @apply relative inline-block transition-all duration-300 ease-out text-sky-600;
+    @apply relative inline-block transition-all duration-300 ease-out text-foreground underline underline-offset-2;
   }
 
   .subtle-link::after {
