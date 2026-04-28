@@ -11,7 +11,7 @@ const Index = () => {
             <h1 className="display-name whitespace-nowrap">
               <span className="display-name-italic">Amrit</span> Singh
             </h1>
-            <p className="body-text text-muted-foreground max-w-md">
+            <p className="body-text text-muted-foreground max-w-md whitespace-nowrap">
               I'm currently a student at UIUC studying Computer Engineering.
             </p>
             
