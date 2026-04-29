@@ -140,11 +140,11 @@
 
   .subtle-link {
     @apply relative inline-block transition-all duration-300 ease-out underline underline-offset-2;
-    color: hsl(235 55% 70%);
+    color: hsl(220 65% 70%);
   }
 
   .subtle-link:hover {
-    color: hsl(235 65% 78%);
+    color: hsl(220 75% 78%);
   }
 
   .subtle-link::after {
