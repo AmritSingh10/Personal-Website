@@ -19,7 +19,7 @@ const Index = () => {
               <li>Researching machine learning at Dartmouth's EDIT Lab, mostly around transformers, spatial transcriptomics, and model optimization.</li>
               <li>Designing FPGA accelerators and custom STM32 PCBs for some of my recent hardware projects.</li>
               
-              <li>Won 4× AIME qualification with 3 distinctions, 2× Cursor Hackathon category wins, and the Congressional Award Gold Medal.</li>
+              <li>4× AIME qualification with 3 distinctions, 2× Cursor Hackathon category wins, and the Congressional Award Gold Medal.</li>
             </ul>
             <p className="text-sm md:text-base text-foreground/80 mt-4 leading-relaxed">
               I'm always exploring new ideas and looking to learn more. Feel free to reach out!
