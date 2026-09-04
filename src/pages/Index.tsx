@@ -5,7 +5,7 @@ const Index = () => {
     <main className="min-h-screen flex items-center justify-center px-6 py-16 md:py-24">
       <div className="w-full max-w-2xl">
         <header className="space-y-4 fade-in">
-          <h1 className="font-display text-xl md:text-2xl text-foreground">
+          <h1 className="font-display text-xl md:text-2xl text-white">
             Amrit Singh
           </h1>
           <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
