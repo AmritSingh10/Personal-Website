@@ -19,6 +19,7 @@ const Index = () => {
               <li>Designing power distribution hardware and embedded monitoring for Illini Electric Motorsports, with Altium, STM32, and CAN.</li>
               <li>Previously worked on ML research at Dartmouth's EDIT Lab, working on transformers, spatial transcriptomics, and model optimization.</li>
               <li>Designed FPGA accelerators and custom PCBs for quantized neural network inference and for some of my recent hardware projects.</li>
+              <li>Previously built a quantum-classical reinforcement learning system for algorithmic trading using LSTMs and variational quantum circuits.</li>
               <li>4× AIME qualifier with 3 distinctions, 2× Cursor Hackathon category winner, and Congressional Award Gold Medal.</li>
             </ul>
             <p className="text-sm md:text-base text-foreground/80 mt-4 leading-relaxed">
