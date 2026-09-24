@@ -14,7 +14,7 @@ const Index = () => {
 
           <div className="pt-2">
             <span className="section-label mb-3 block">My Work</span>
-              <ul className="text-sm md:text-base space-y-2 text-foreground/80 list-disc list-outside pl-6 leading-relaxed">
+              <ul className="text-base md:text-lg space-y-2 text-foreground/80 list-disc list-outside pl-6 leading-relaxed">
               <li>Building agent infrastructure at AgentPhone (YC P26), mostly around telephony APIs, event-driven workflows, and MCP tooling.</li>
               <li>Designing power distribution hardware and embedded monitoring for Illini Electric Motorsports, with Altium, STM32, and CAN.</li>
               <li>Previously worked on ML research at Dartmouth's EDIT Lab, working on transformers, spatial transcriptomics, and model optimization.</li>
