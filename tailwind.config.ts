@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Sora', 'system-ui', 'sans-serif'],
-        body: ['Manrope', 'system-ui', 'sans-serif'],
+        display: ['Instrument Serif', 'system-ui', 'sans-serif'],
+        body: ['Geist', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
