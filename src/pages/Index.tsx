@@ -17,8 +17,8 @@ const Index = () => {
               <ul className="text-sm md:text-base space-y-2 text-foreground/80 list-disc list-outside pl-6 leading-relaxed">
               <li>Building agent infrastructure at AgentPhone (YC P26), mostly around telephony APIs, event-driven workflows, and MCP tooling.</li>
               <li>Designing power distribution hardware and embedded monitoring for Illini Electric Motorsports, with Altium, STM32, and CAN.</li>
-              <li>Previously worked on ML research at Dartmouth's EDIT Lab and co-founded VertiGone, an assistive wearable built around embedded sensing and sensor fusion.</li>
-              <li>Designed FPGA accelerators and custom PCBs for some of my recent hardware projects.</li>
+              <li>Previously worked on ML research at Dartmouth's EDIT Lab, working on transformers, spatial transcriptomics, and model optimization.</li>
+              <li>Designed FPGA accelerators and custom PCBs for quantized neural network inference and for some of my recent hardware projects.</li>
               <li>4× AIME qualifier with 3 distinctions, 2× Cursor Hackathon category winner, and Congressional Award Gold Medal.</li>
             </ul>
             <p className="text-sm md:text-base text-foreground/80 mt-4 leading-relaxed">
